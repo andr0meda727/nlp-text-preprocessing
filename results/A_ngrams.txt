@@ -1,0 +1,75 @@
+Sentences: 7519
+Words: 116876
+Unique words: 22074
+
+UNIGRAMS: 116,876 occurrences, 22,074 unique
+  i                                   3499
+  się                                 3195
+  w                                   2477
+  nie                                 2199
+  na                                  2126
+  z                                   1834
+  do                                  1529
+  że                                  1413
+  a                                   1339
+  to                                  1080
+  pan                                 977
+  wokulski                            791
+  za                                  758
+  o                                   731
+  ale                                 696
+  co                                  642
+  jak                                 575
+  po                                  542
+  jest                                523
+  mu                                  521
+  top-10 share: 17.70%
+  n-grams occurring only once (hapax): 60.14%
+
+BIGRAMS: 109,357 occurrences, 78,606 unique
+  panna izabela                       285
+  się z                               196
+  się w                               181
+  się do                              166
+  się na                              153
+  pan ignacy                          150
+  się że                              148
+  mu się                              137
+  pan tomasz                          130
+  w tej                               113
+  tysięcy rubli                       110
+  się i                               107
+  tej chwili                          99
+  mi się                              91
+  panny izabeli                       79
+  w tym                               75
+  nie ma                              74
+  i w                                 69
+  że nie                              68
+  i nie                               65
+  top-10 share: 1.52%
+  n-grams occurring only once (hapax): 87.16%
+
+TRIGRAMS: 102,045 occurrences, 96,987 unique
+  w tej chwili                        96
+  mu się że                           32
+  mi się że                           29
+  zdawało mu się                      28
+  w takim razie                       27
+  cóż to za                           26
+  zdaje mi się                        23
+  w każdym razie                      19
+  a nade wszystko                     18
+  zbliżył się do                      17
+  od tej pory                         16
+  trzydzieści tysięcy rubli           16
+  się z fotelu                        15
+  a a a                               15
+  od czasu do                         14
+  czasu do czasu                      14
+  mu w oczy                           14
+  zdawało się że                      14
+  się panna izabela                   14
+  go za rękę                          14
+  top-10 share: 0.31%
+  n-grams occurring only once (hapax): 96.88%

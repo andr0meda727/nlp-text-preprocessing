@@ -1,0 +1,238 @@
+=== PART B: token | stem (Porter) | lemma (WordNet + POS) ===
+
+Sentence 1: To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles, And, by opposing end them?
+token          POS   stem         lemma       
+To             TO    to           to          
+be             VB    be           be          
+or             CC    or           or          
+not            RB    not          not         
+to             TO    to           to          
+be             VB    be           be          
+that           DT    that         that        
+is             VBZ   is           be            <-- different
+the            DT    the          the         
+question       NN    question     question    
+Whether        NNP   whether      whether     
+tis            NN    ti           ti          
+nobler         NN    nobler       nobler      
+in             IN    in           in          
+the            DT    the          the         
+mind           NN    mind         mind        
+to             TO    to           to          
+suffer         VB    suffer       suffer      
+The            DT    the          the         
+slings         NNS   sling        sling       
+and            CC    and          and         
+arrows         NNS   arrow        arrow       
+of             IN    of           of          
+outrageous     JJ    outrag       outrageous    <-- different
+fortune        NN    fortun       fortune       <-- different
+Or             CC    or           or          
+to             TO    to           to          
+take           VB    take         take        
+arms           NNS   arm          arm         
+against        IN    against      against     
+a              DT    a            a           
+sea            NN    sea          sea         
+of             IN    of           of          
+troubles       NNS   troubl       trouble       <-- different
+And            CC    and          and         
+by             IN    by           by          
+opposing       VBG   oppos        oppose        <-- different
+end            VB    end          end         
+them           PRP   them         them        
+
+Sentence 2: Let me not think on't,--Frailty, thy name is Woman!
+token          POS   stem         lemma       
+Let            VB    let          let         
+me             PRP   me           me          
+not            RB    not          not         
+think          VB    think        think       
+o              VBP   o            o           
+n't            RB    n't          n't         
+Frailty        NNP   frailti      frailty       <-- different
+thy            JJ    thi          thy           <-- different
+name           NN    name         name        
+is             VBZ   is           be            <-- different
+Woman          NNP   woman        woman       
+
+Sentence 3: Neither a borrower nor a lender be:
+token          POS   stem         lemma       
+Neither        CC    neither      neither     
+a              DT    a            a           
+borrower       NN    borrow       borrower      <-- different
+nor            CC    nor          nor         
+a              DT    a            a           
+lender         NN    lender       lender      
+be             VB    be           be          
+
+Sentence 4: There are more things in heaven and earth, Horatio, Than are dreamt of in your philosophy.
+token          POS   stem         lemma       
+There          EX    there        there       
+are            VBP   are          be            <-- different
+more           JJR   more         more        
+things         NNS   thing        thing       
+in             IN    in           in          
+heaven         NN    heaven       heaven      
+and            CC    and          and         
+earth          NN    earth        earth       
+Horatio        NNP   horatio      horatio     
+Than           NNP   than         than        
+are            VBP   are          be            <-- different
+dreamt         NN    dreamt       dreamt      
+of             IN    of           of          
+in             IN    in           in          
+your           PRP$  your         your        
+philosophy     NN    philosophi   philosophy    <-- different
+
+Sentence 5: Though this be madness, yet there's method in it.
+token          POS   stem         lemma       
+Though         IN    though       though      
+this           DT    thi          this          <-- different
+be             VB    be           be          
+madness        JJ    mad          madness       <-- different
+yet            RB    yet          yet         
+there          EX    there        there       
+'s             VBZ   's           's          
+method         NN    method       method      
+in             IN    in           in          
+it             PRP   it           it          
+
+Words for which stemming and lemmatization differ (14):
+  is           stem=is         lemma=be
+  outrageous   stem=outrag     lemma=outrageous
+  fortune      stem=fortun     lemma=fortune
+  troubles     stem=troubl     lemma=trouble
+  opposing     stem=oppos      lemma=oppose
+  Frailty      stem=frailti    lemma=frailty
+  thy          stem=thi        lemma=thy
+  is           stem=is         lemma=be
+  borrower     stem=borrow     lemma=borrower
+  are          stem=are        lemma=be
+  are          stem=are        lemma=be
+  philosophy   stem=philosophi lemma=philosophy
+  this         stem=thi        lemma=this
+  madness      stem=mad        lemma=madness
+
+
+=== PART D: stemmer comparison on the vocabulary of the whole play ===
+Unique words (length > 2): 3263
+  Porter     -> 2683 unique stems
+  Lancaster  -> 2438 unique stems
+  Snowball   -> 2652 unique stems
+
+Porter != Lancaster: 1260 words (38.6%)
+Porter != Snowball:  86 words (2.6%)
+
+word           Porter       Lancaster    Snowball    
+generous       gener        gen          generous    
+general        gener        gen          general     
+university     univers      univers      univers     
+conscience     conscienc    conscy       conscienc   
+suffer         suffer       suff         suffer      
+nobler         nobler       nobl         nobler      
+fortune        fortun       fortun       fortun      
+outrageous     outrag       out          outrag      
+philosophy     philosophi   philosoph    philosophi  
+heaven         heaven       heav         heaven      
+madness        mad          mad          mad         
+question       question     quest        question    
+something      someth       someth       someth      
+doing          do           doing        do          
+fairly         fairli       fair         fair        
+lying          lie          lying        lie         
+sweetly        sweetli      sweet        sweet       
+organization   organ        org          organ       
+
+Examples from Hamlet where Porter != Snowball:
+  abruptly       Porter=abruptli     Snowball=abrupt
+  abus           Porter=abu          Snowball=abus
+  beauteous      Porter=beauteou     Snowball=beauteous
+  bounteous      Porter=bounteou     Snowball=bounteous
+  brutus         Porter=brutu        Snowball=brutus
+  calmly         Porter=calmli       Snowball=calm
+  chorus         Porter=choru        Snowball=chorus
+  clearly        Porter=clearli      Snowball=clear
+  coldly         Porter=coldli       Snowball=cold
+  commune        Porter=commun       Snowball=commune
+  constantly     Porter=constantli   Snowball=constant
+  costly         Porter=costli       Snowball=cost
+  courteous      Porter=courteou     Snowball=courteous
+  dearly         Porter=dearli       Snowball=dear
+  devoutly       Porter=devoutli     Snowball=devout
+  earthly        Porter=earthli      Snowball=earth
+  envious        Porter=enviou       Snowball=envious
+  exactly        Porter=exactli      Snowball=exact
+  exceedingly    Porter=exceedingli  Snowball=exceed
+  feelingly      Porter=feelingli    Snowball=feel
+  frankly        Porter=frankli      Snowball=frank
+  frowningly     Porter=frowningli   Snowball=frown
+  general        Porter=gener        Snowball=general
+  generous       Porter=gener        Snowball=generous
+  gently         Porter=gentli       Snowball=gentl
+
+Overstemming - Lancaster merges words with different meanings (selected groups):
+  act      <- act, acted, acting, action, actions, actor, actors, acts
+  off      <- off, offal, offence, offences, offer, offering, office, officers
+  com      <- com, come, comes, comical, coming, commencement, comment
+  lov      <- lov, love, loved, lover, loves, loving
+  cont     <- conceal, contagion, content, contrive, contriving
+  lik      <- like, likelihood, likely, likeness, likes
+  pass     <- pass, passes, passing, passion, passionate
+  adv      <- advancement, adventurous, advice, advise
+  bar      <- bar, bare, barr, barren
+  car      <- carefully, cares, carouses, carrion
+  easy     <- easier, easily, easiness, easy
+  ent      <- enter, entrance, entreat, entreated
+  form     <- form, formal, former, forms
+  friend   <- friend, friending, friends, friendship
+  heav     <- heaven, heavenly, heavens, heaves
+
+Overstemming - Porter (same stem, different lemmas):
+  light    <- light, lighted, lightness, lights
+  like     <- like, likely, likeness, likes
+  observ   <- observ, observance, observe, observers
+  offend   <- offend, offended, offender, offends
+  spring   <- spring, springe, springes, springs
+  utter    <- utter, utterance, uttered, uttering
+  amaz     <- amaz, amaze, amazement
+  attend   <- attendant, attendants, attended
+  breath   <- breath, breathes, breathing
+  cannon   <- cannon, cannoneer, cannons
+  contract <- contract, contracted, contraction
+  desir    <- desire, desires, desirous
+  differ   <- difference, differences, different
+  distract <- distract, distracted, distraction
+  dread    <- dread, dreaded, dreadful
+
+Understemming - forms of one lexeme with different stems (Porter):
+  lemma bad       : bad->bad, worse->wors
+  lemma base      : base->base, baser->baser
+  lemma be        : are->are, been->been, being->be, was->wa, were->were
+  lemma bear      : bear->bear, bears->bear, born->born, borne->born
+  lemma beat      : beaten->beaten, beating->beat
+  lemma beget     : beget->beget, begotten->begotten
+  lemma bend      : bend->bend, bended->bend, bent->bent
+  lemma bid       : bade->bade, bid->bid
+  lemma break     : break->break, breaking->break, breaks->break, broke->broke, broken->broken
+  lemma bring     : bring->bring, bringing->bring, brought->brought
+  lemma build     : build->build, builds->build, built->built
+  lemma burn      : burning->burn, burns->burn, burnt->burnt
+  lemma buy       : bought->bought, buy->buy
+  lemma catch     : catch->catch, caught->caught
+  lemma chief     : chief->chief, chiefest->chiefest
+  lemma child     : child->child, children->children
+  lemma cleave    : cleave->cleav, cleft->cleft
+  lemma clothe    : clad->clad, clothe->cloth, clothes->cloth
+  lemma come      : came->came, come->come, comes->come, coming->come
+  lemma dear      : dear->dear, dearest->dearest
+
+Classic control examples:
+  universe: P=univers, L=univers, S=univers | university: P=univers, L=univers, S=univers
+  general: P=gener, L=gen, S=general | generous: P=gener, L=gen, S=generous
+  policy: P=polici, L=policy, S=polici | police: P=polic, L=pol, S=polic
+  organ: P=organ, L=org, S=organ | organization: P=organ, L=org, S=organ
+  think: P=think, L=think, S=think | thought: P=thought, L=thought, S=thought
+  speak: P=speak, L=speak, S=speak | spoke: P=spoke, L=spok, S=spoke
+  mouse: P=mous, L=mous, S=mous | mice: P=mice, L=mic, S=mice
+  absorb: P=absorb, L=absorb, S=absorb | absorption: P=absorpt, L=absorb, S=absorpt

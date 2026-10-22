@@ -1,0 +1,229 @@
+=== PART E.1: tokenization, stemming and lemmatization of Polish text ===
+Excerpt (1036 characters):
+W początkach roku 1878, kiedy świat polityczny zajmował się pokojem san-stefańskim, wyborem nowego papieża albo szansami europejskiej wojny, warszawscy kupcy tudzież inteligencja pewnej okolicy Krakowskiego Przedmieścia niemniej gorąco interesowała się przyszłością galanteryjnego sklepu pod firmą J. Mincel i S. Wokulski. W renomowanej jadłodajni, gdzie na wieczorną przekąskę zbierali się właściciele składów bielizny i składów win, fabrykanci powozów i kapeluszy, poważni ojcowie rodzin, utrzymujący się z własnych funduszów, i posiadacze kamienic bez zajęcia, równie dużo mówiono o uzbrojeniach Anglii, jak o firmie J. Mincel i S. Wokulski. Zatopieni w kłębach dymu cygar i pochyleni nad butelkami z ciemnego szkła obywatele tej dzielnicy, jedni zakładali się o wygranę lub przegranę Anglii, drudzy o bankructwo Wokulskiego; jedni nazywali geniuszem Bismarcka, drudzy — awanturnikiem Wokulskiego; jedni krytykowali postępowanie prezydenta MacMahona, inni twierdzili, że Wokulski jest zdecydowanym wariatem, jeżeli nie czymś gorszym…
+
+token              POS    stem (Stempel)     lemma (spaCy)      Snowball EN     
+W                  ADP    wyspa              w                  w               
+początkach         NOUN   początki           początek           początkach      
+roku               NOUN   rok                rok                roku            
+kiedy              ADV    kieda              kiedy              kiedi           
+świat              NOUN   świat              świat              świat           
+polityczny         ADJ    polityczny         polityczny         polityczni      
+zajmował           VERB   zajmować           zajmować           zajmował        
+się                PRON   się                się                się             
+pokojem            NOUN   pokój              pokoj              pokojem         
+san                PROPN  san                san                san             
+stefańskim         ADJ    stefański          stefański          stefańskim      
+wyborem            NOUN   wybór              wybór              wyborem         
+nowego             ADJ    nowy               nowy               nowego          
+papieża            NOUN   papież             papież             papieża         
+albo               CCONJ  alba               albo               albo            
+szansami           NOUN   szansa             szans              szansami        
+europejskiej       ADJ    europejski         europejski         europejskiej    
+wojny              NOUN   wojna              wojna              wojni           
+warszawscy         ADJ    warszawski         warszawski         warszawsci      
+kupcy              NOUN   kupiec             kupiec             kupci           
+tudzież            AUX    tudzieża           tudzież            tudzież         
+inteligencja       NOUN   inteligencja       inteligencja       inteligencja    
+pewnej             DET    pewny              pewien             pewnej          
+okolicy            NOUN   okolica            okolica            okolici         
+Krakowskiego       ADJ    krakowski          krakowski          krakowskiego    
+Przedmieścia       NOUN   przedmieście       przedmieście       przedmieścia    
+niemniej           CCONJ  niemało            niemniej           niemniej        
+gorąco             ADV    gorący             gorąco             gorąco          
+interesowała       VERB   interesować        interesować        interesowała    
+się                PRON   się                się                się             
+przyszłością       NOUN   przyszłość         przyszłość         przyszłością    
+galanteryjnego     ADJ    galanteryjny       galanteryjny       galanteryjnego  
+sklepu             NOUN   sklep              sklep              sklepu          
+pod                ADP    pod                pod                pod             
+firmą              NOUN   firma              firma              firmą           
+J                  X      junioezioro        j                  j               
+Mincel             PROPN  mincel             mincel             mincel          
+i                  CCONJ  i                  i                  i               
+S                  X      syn                s                  s               
+Wokulski           PROPN  wokulski           wokulski           wokulski        
+W                  ADP    wyspa              w                  w               
+renomowanej        ADJ    renomowany         renomowany         renomowanej     
+jadłodajni         PROPN  jadłodajny         jadłodajni         jadłodajni      
+gdzie              ADV    gd                 gdzie              gdzie           
+na                 ADP    nativus            na                 na              
+wieczorną          ADJ    wieczorny          wieczorny          wieczorną       
+przekąskę          NOUN   przekąska          przekąska          przekąskę       
+zbierali           VERB   zbierać            zbierać            zbierali        
+się                PRON   się                się                się             
+właściciele        NOUN   właściciel         właściciel         właściciel      
+składów            NOUN   skład              skład              składów         
+bielizny           ADJ    bielizna           bielizny           bielizni        
+i                  CCONJ  i                  i                  i               
+składów            NOUN   skład              skład              składów         
+win                PROPN  wino               win                win             
+fabrykanci         NOUN   fabrykant          fabrykant          fabryk          
+powozów            NOUN   powóz              powoz              powozów         
+i                  CCONJ  i                  i                  i               
+kapeluszy          NOUN   kapelusz           kapelusz           kapeluszi       
+poważni            ADJ    poważny            poważnić           poważni         
+ojcowie            NOUN   ojcowie            ojcowie            ojcowi          
+rodzin             NOUN   rodzina            rodzina            rodzin          
+utrzymujący        ADJ    utrzymywać         utrzymuć           utrzymująci     
+się                PRON   się                się                się             
+z                  ADP    ezyt               z                  z               
+własnych           ADJ    własny             własny             własnych        
+funduszów          NOUN   fundusz            fundusz            funduszów       
+i                  CCONJ  i                  i                  i               
+posiadacze         NOUN   posiadacz          posiadacz          posiadacz       
+kamienic           NOUN   kamienica          kamienica          kamien          
+bez                ADP    beza               bez                bez             
+zajęcia            NOUN   zajęcie            zajęcie            zajęcia         
+równie             ADV    równia             równie             równie          
+dużo               ADV    duży               dużo               dużo            
+mówiono            VERB   mówić              mówiić             mówiono         
+o                  ADP    ojciec             o                  o               
+uzbrojeniach       NOUN   uzbrojenie         uzbrojeni          uzbrojeniach    
+Anglii             PROPN  anglia             anglia             anglii          
+jak                SCONJ  jaka               jak                jak             
+o                  ADP    ojciec             o                  o               
+firmie             NOUN   firma              firma              firmi           
+J                  X      junioezioro        j                  j               
+Mincel             PROPN  mincel             mincel             mincel          
+i                  CCONJ  i                  i                  i               
+S                  X      syn                s                  s               
+Wokulski           PROPN  wokulski           wokulski           wokulski        
+Zatopieni          ADJ    zatopić            zatopieni          zatopieni       
+w                  ADP    wyspa              w                  w               
+kłębach            NOUN   kłąb               kłąb               kłębach         
+dymu               NOUN   dym                dym                dymu            
+cygar              NOUN   cygaro             cygar              cygar           
+i                  CCONJ  i                  i                  i               
+pochyleni          ADJ    pochylić           pochylić           pochyleni       
+nad                ADP    nad                nad                nad             
+butelkami          NOUN   butelka            butelka            butelkami       
+z                  ADP    ezyt               z                  z               
+ciemnego           ADJ    ciemny             ciemny             ciemnego        
+szkła              NOUN   szkło              szkło              szkła           
+obywatele          NOUN   obywatel           obywatel           obywatel        
+tej                DET    tnn                ten                tej             
+dzielnicy          NOUN   dzielnica          dzielnica          dzielnici       
+jedni              ADJ    jednia             jeden              jedni           
+zakładali          VERB   zakładać           zakładać           zakładali       
+się                PRON   się                się                się             
+o                  ADP    ojciec             o                  o               
+wygranę            NOUN   wygrana            wygrana            wygranę         
+lub                CCONJ  lubić              lub                lub             
+przegranę          NOUN   przegrana          przegrana          przegranę       
+Anglii             PROPN  anglia             anglia             anglii          
+drudzy             ADJ    drugi              drugi              drudzi          
+o                  ADP    ojciec             o                  o               
+bankructwo         NOUN   bankructwo         bankructwo         bankructwo      
+Wokulskiego        PROPN  wokulski           wokulski           wokulskiego     
+jedni              ADJ    jednia             jeden              jedni           
+nazywali           VERB   nazywać            nazywać            nazywali        
+geniuszem          NOUN   geniusz            geniusz            geniuszem       
+Bismarcka          PROPN  bismarcki          bismarck           bismarcka       
+drudzy             ADJ    drugi              drugi              drudzi          
+awanturnikiem      NOUN   awanturnik         awanturniek        awanturnikiem   
+Wokulskiego        PROPN  wokulski           wokulski           wokulskiego     
+jedni              ADJ    jednia             jedny              jedni           
+krytykowali        VERB   krytykować         krytykować         krytykowali     
+postępowanie       NOUN   postępowanie       postępowanie       postępowani     
+prezydenta         NOUN   prezydent          prezydent          prezydenta      
+MacMahona          PROPN  macmahon           macmahon           macmahona       
+inni               ADJ    inny               inny               inni            
+twierdzili         VERB   twierdzić          twierdzić          twierdzili      
+że                 SCONJ  że                 że                 że              
+Wokulski           PROPN  wokulski           wokulski           wokulski        
+jest               AUX    być                być                jest            
+zdecydowanym       ADJ    zdecydowany        zdecydowany        zdecydowanym    
+wariatem           NOUN   wariat             wariat             wariatem        
+jeżeli             SCONJ  jeżeć              jeżeli             jeże            
+nie                PART   n                  nie                nie             
+czymś              PRON   coś                coś                czymś           
+gorszym            ADJ    gorszy             gorszym            gorszym         
+
+Tokens (words): 136, unique forms: 110, unique stems: 108, unique lemmas: 109
+Sentences (spaCy): 3
+
+Words where the Stempel stem differs from the spaCy lemma:
+  W                stem=wyspa            lemma=w
+  początkach       stem=początki         lemma=początek
+  kiedy            stem=kieda            lemma=kiedy
+  pokojem          stem=pokój            lemma=pokoj
+  albo             stem=alba             lemma=albo
+  szansami         stem=szansa           lemma=szans
+  tudzież          stem=tudzieża         lemma=tudzież
+  pewnej           stem=pewny            lemma=pewien
+  niemniej         stem=niemało          lemma=niemniej
+  gorąco           stem=gorący           lemma=gorąco
+  J                stem=junioezioro      lemma=j
+  S                stem=syn              lemma=s
+  W                stem=wyspa            lemma=w
+  jadłodajni       stem=jadłodajny       lemma=jadłodajni
+  gdzie            stem=gd               lemma=gdzie
+  na               stem=nativus          lemma=na
+  bielizny         stem=bielizna         lemma=bielizny
+  win              stem=wino             lemma=win
+  powozów          stem=powóz            lemma=powoz
+  poważni          stem=poważny          lemma=poważnić
+  utrzymujący      stem=utrzymywać       lemma=utrzymuć
+  z                stem=ezyt             lemma=z
+  bez              stem=beza             lemma=bez
+  równie           stem=równia           lemma=równie
+  dużo             stem=duży             lemma=dużo
+  mówiono          stem=mówić            lemma=mówiić
+  o                stem=ojciec           lemma=o
+  uzbrojeniach     stem=uzbrojenie       lemma=uzbrojeni
+  jak              stem=jaka             lemma=jak
+  o                stem=ojciec           lemma=o
+  J                stem=junioezioro      lemma=j
+  S                stem=syn              lemma=s
+  Zatopieni        stem=zatopić          lemma=zatopieni
+  w                stem=wyspa            lemma=w
+  cygar            stem=cygaro           lemma=cygar
+  z                stem=ezyt             lemma=z
+  tej              stem=tnn              lemma=ten
+  jedni            stem=jednia           lemma=jeden
+  o                stem=ojciec           lemma=o
+  lub              stem=lubić            lemma=lub
+  o                stem=ojciec           lemma=o
+  jedni            stem=jednia           lemma=jeden
+  Bismarcka        stem=bismarcki        lemma=bismarck
+  awanturnikiem    stem=awanturnik       lemma=awanturniek
+  jedni            stem=jednia           lemma=jedny
+  jeżeli           stem=jeżeć            lemma=jeżeli
+  nie              stem=n                lemma=nie
+  gorszym          stem=gorszy           lemma=gorszym
+
+Inflection of 'sklep' and 'człowiek' - stem vs lemma vs English Snowball:
+  sklep        Stempel=sklepić      spaCy=sklep        Snowball-EN=sklep
+  sklepu       Stempel=sklep        spaCy=sklep        Snowball-EN=sklepu
+  sklepowi     Stempel=sklepowy     spaCy=sklep        Snowball-EN=sklepowi
+  sklepem      Stempel=sklep        spaCy=sklep        Snowball-EN=sklepem
+  sklepie      Stempel=sklepać      spaCy=sklep        Snowball-EN=sklepi
+  sklepy       Stempel=sklep        spaCy=sklep        Snowball-EN=sklepi
+  sklepów      Stempel=sklep        spaCy=sklep        Snowball-EN=sklepów
+  człowiek     Stempel=człowiek     spaCy=człowiek     Snowball-EN=człowiek
+  człowieka    Stempel=człowiek     spaCy=człowiek     Snowball-EN=człowieka
+  ludzie       Stempel=lud          spaCy=człowiek     Snowball-EN=ludzi
+  ludźmi       Stempel=człowiek     spaCy=człowiek     Snowball-EN=ludźmi
+  panna        Stempel=panna        spaCy=panna        Snowball-EN=panna
+  pannie       Stempel=panna        spaCy=panć         Snowball-EN=panni
+  panną        Stempel=panna        spaCy=panny        Snowball-EN=panną
+
+=== PART E.2: English Snowball applied to Polish words ===
+word           Snowball EN    Stempel        spaCy lemma   
+kotkowi        kotkowi        kotkowy        kotk          
+pięknymi       pięknymi       piękny         piękny        
+zbliżyłabym    zbliżyłabym    zbliżyć        zbliżyłabym   
+sklepach       sklepach       sklep          sklep         
+rozmawiałeś    rozmawiałeś    rozmawiać      rozmawiać być 
+najlepszego    najlepszego    dobry          dobry         
+ubierając      ubierając      ubierać        ubierać       
+wspaniałości   wspaniałości   wspaniałość    wspaniałość   
+chodzimy       chodzimi       chodzić        chodzić       
+ludzie         ludzi          lud            człowiek      
+panny          panni          panna          panny         
+tysięcy        tysięci        tysiąc         tysiąc        
+
+=== PART E.3: languages supported by SnowballStemmer ===
+arabic, danish, dutch, english, finnish, french, german, hungarian, italian, norwegian, porter, portuguese, romanian, russian, spanish, swedish
+Count: 16; Polish supported: False

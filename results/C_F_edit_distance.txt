@@ -1,0 +1,47 @@
+=== PART C ===
+'Ala ma kota' (len 11)  vs  'Ala posiada kota' (len 16)
+Levenshtein distance (textdistance): 6
+Normalized similarity: 0.625
+One of the optimal operation sequences (6):
+  - insert 'p' (after pos. 4)
+  - insert 'o' (after pos. 4)
+  - insert 's' (after pos. 4)
+  - insert 'i' (after pos. 4)
+  - insert 'a' (after pos. 4)
+  - substitute 'm' -> 'd' (pos. 5)
+Word-level distance (each word = 1 symbol): 1
+
+=== PART F ===
+Distances (raw; for Jaro-Winkler and Jaccard: 1 - similarity):
+pair                                           Levenshtein    Damerau-Lev.    Jaro-Winkler  Jaccard(bigr.)
+Ala ma kota / Ala posiada kota                           6               6           0.153           0.529
+Wokulski / Wokólski                                      1               1           0.058           0.444
+Ala ma kota / Ala am kota                                2               1           0.018           0.462
+zażółć gęślą jaźń / zazolc gesla jazn                    9               9           0.478           0.857
+Ala ma kota / kota ma Ala                                6               6           0.303           0.182
+Izabela / Izabeli                                        1               1           0.057           0.286
+
+Similarities normalized to [0, 1] (1 = identical):
+pair                                           Levenshtein    Damerau-Lev.    Jaro-Winkler  Jaccard(bigr.)    spread
+Ala ma kota / Ala posiada kota                       0.625           0.625           0.847           0.471     0.376
+Wokulski / Wokólski                                  0.875           0.875           0.942           0.556     0.386
+Ala ma kota / Ala am kota                            0.818           0.909           0.982           0.538     0.443
+zażółć gęślą jaźń / zazolc gesla jazn                0.471           0.471           0.522           0.143     0.379
+Ala ma kota / kota ma Ala                            0.455           0.455           0.697           0.818     0.364
+Izabela / Izabeli                                    0.857           0.857           0.943           0.714     0.229
+
+Pairs ranked by spread (max - min similarity):
+  0.443  'Ala ma kota' / 'Ala am kota'  - transposed letters
+  0.386  'Wokulski' / 'Wokólski'  - spelling typo
+  0.379  'zażółć gęślą jaźń' / 'zazolc gesla jazn'  - diacritics only
+  0.376  'Ala ma kota' / 'Ala posiada kota'  - word replaced with a synonym
+  0.364  'Ala ma kota' / 'kota ma Ala'  - swapped words
+  0.229  'Izabela' / 'Izabeli'  - inflection
+
+Word-level Jaccard (qval=None):
+  'Ala ma kota' / 'Ala posiada kota': 0.500
+  'Wokulski' / 'Wokólski': 0.000
+  'Ala ma kota' / 'Ala am kota': 0.500
+  'zażółć gęślą jaźń' / 'zazolc gesla jazn': 0.000
+  'Ala ma kota' / 'kota ma Ala': 1.000
+  'Izabela' / 'Izabeli': 0.000
