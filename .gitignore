@@ -1,0 +1,9 @@
+.cache/
+bielik_tokenizer/
+.idea/
+__pycache__/
+results/H_sentence_counts.csv
+results/H_vocab_sizes.csv
+results/H_word_splits.csv
+results/tokenizer_pl_1000.json
+results/tokenizer_pl_30000.json

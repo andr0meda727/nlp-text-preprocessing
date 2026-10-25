@@ -1,6 +1,13 @@
 nltk
-spacy
+spacy>=3.8,<3.9
+preshed==3.0.13
+pl-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/pl_core_news_sm-3.8.0/pl_core_news_sm-3.8.0-py3-none-any.whl
 matplotlib
 textdistance
 pystempel
-# python -m spacy download pl_core_news_sm
+stop-words
+tokenizers>=0.21,<0.23
+transformers>=4.45,<5
+sentencepiece
+sacremoses
+pip-system-certs; sys_platform == "win32"

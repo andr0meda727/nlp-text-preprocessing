@@ -1,0 +1,117 @@
+=== CZĘŚĆ G ===
+Stop words: 335; lista: stop-words/polish
+Zdania z wyrazami przed filtrowaniem: 7519
+Zdania z wyrazami po filtrowaniu: 7431
+Wyrazy przed: 116876; po: 67418
+Usunięto 49458 wystąpień (42.32%).
+
+=== PRZED USUNIĘCIEM STOP WORDS ===
+
+UNIGRAMY: 116876 wystąpień, 22074 typów
+  i                                        3499
+  się                                      3195
+  w                                        2477
+  nie                                      2199
+  na                                       2126
+  z                                        1834
+  do                                       1529
+  że                                       1413
+  a                                        1339
+  to                                       1080
+  Udział top 10 we wszystkich wystąpieniach: 17.70%
+  Udział typów występujących tylko raz: 60.14%
+
+BIGRAMY: 109357 wystąpień, 78606 typów
+  panna izabela                            285
+  się z                                    196
+  się w                                    181
+  się do                                   166
+  się na                                   153
+  pan ignacy                               150
+  się że                                   148
+  mu się                                   137
+  pan tomasz                               130
+  w tej                                    113
+  Udział top 10 we wszystkich wystąpieniach: 1.52%
+  Udział typów występujących tylko raz: 87.16%
+
+TRIGRAMY: 102045 wystąpień, 96987 typów
+  w tej chwili                             96
+  mu się że                                32
+  mi się że                                29
+  zdawało mu się                           28
+  w takim razie                            27
+  cóż to za                                26
+  zdaje mi się                             23
+  w każdym razie                           19
+  a nade wszystko                          18
+  zbliżył się do                           17
+  Udział top 10 we wszystkich wystąpieniach: 0.31%
+  Udział typów występujących tylko raz: 96.88%
+
+=== PO USUNIĘCIU STOP WORDS ===
+
+UNIGRAMY: 67418 wystąpień, 21769 typów
+  wokulski                                 791
+  panna                                    371
+  izabela                                  286
+  panie                                    256
+  rubli                                    238
+  wokulskiego                              208
+  tysięcy                                  208
+  ażeby                                    189
+  ignacy                                   187
+  odparł                                   174
+  Udział top 10 we wszystkich wystąpieniach: 4.31%
+  Udział typów występujących tylko raz: 60.91%
+
+BIGRAMY: 59987 wystąpień, 55275 typów
+  panna izabela                            285
+  tysięcy rubli                            110
+  panny izabeli                            79
+  panna florentyna                         60
+  panie wokulski                           49
+  pannę izabelę                            40
+  młody człowiek                           37
+  odparł wokulski                          32
+  pannie izabeli                           27
+  panie stanisławie                        26
+  Udział top 10 we wszystkich wystąpieniach: 1.24%
+  Udział typów występujących tylko raz: 95.85%
+
+TRIGRAMY: 52971 wystąpień, 52405 typów
+  trzydzieści tysięcy rubli                16
+  dziesięć tysięcy rubli                   13
+  sto dwadzieścia tysięcy                  11
+  dziewięćdziesiąt tysięcy rubli           10
+  szepnęła panna izabela                   9
+  pięćdziesiąt tysięcy rubli               8
+  spytała panna izabela                    8
+  sto tysięcy rubli                        7
+  tysięcy rubli rocznie                    7
+  panie wokulski rzekła                    7
+  Udział top 10 we wszystkich wystąpieniach: 0.18%
+  Udział typów występujących tylko raz: 99.31%
+
+=== PORÓWNANIE WARIANTÓW ===
+Jednostka     Wyst. przed     Wyst. po   Typy przed      Typy po   Wspólne top10
+UNIGRAMY           116876        67418        22074        21769            0/10
+BIGRAMY            109357        59987        78606        55275            1/10
+TRIGRAMY           102045        52971        96987        52405            0/10
+
+=== NAZWY WŁASNE ===
+Wzorzec słów: \b[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]+\b
+Wzorzec kandydatów (fullmatch): [A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+
+Znaleziono 6368 wystąpień i 1755 różnych kandydatów.
+
+10 najczęstszych kandydatów na nazwy własne:
+   1. Wokulski                 647
+   2. Izabela                  285
+   3. Wokulskiego              208
+   4. Ignacy                   185
+   5. Tomasz                   132
+   6. Izabeli                  108
+   7. Rzecki                   77
+   8. Łęcki                    71
+   9. Stach                    65
+  10. Florentyna               60
